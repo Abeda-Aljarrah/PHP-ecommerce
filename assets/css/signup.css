@@ -5,10 +5,10 @@
 	background-position:center;
     transition: all .5s;
     padding: 1px;
-min-height: 100vh;
-display: flex;
-align-items: center;
-justify-content: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .veen{
     width: 70%;
@@ -78,23 +78,23 @@ justify-content: center;
     width: 100%; 
 }
 .veen .wrapper > form:focus{
-outline: none;
+    outline: none;
 }
 .veen .wrapper #login{
     padding-top: 20%;
-visibility: visible;
+    visibility: visible;
 }
 .veen .wrapper #register{
     transform: translateY(-80%) translateX(100%);
-visibility: hidden;
+    visibility: hidden;
 }
 .veen .wrapper.move #register{
     transform: translateY(-80%) translateX(0%);
-visibility: visible;
+    visibility: visible;
 }
 .veen .wrapper.move #login{
     transform: translateX(-100%);
-visibility: hidden;
+    visibility: hidden;
 }
 .veen .wrapper > form > div {
     position: relative;
@@ -145,18 +145,30 @@ visibility: hidden;
     font-weight: bold;
     font-size: 20px;
 }
+.veen button a{
+    color: white;
+}
+a{
+    color: #FFF !important;
+}
+.veen .wrapper .reg {
+    padding-top: 10%;
+    visibility: visible;
+}
+.veen .wrapper span{
+    color: red;
+}
 @media screen and (max-width: 480px){
     .veen{
         padding: 5px;
         margin: 0;
         width: 100%;
         display: block;
-        height: 120%;
 
     }
     .veen > .wrapper{
         position: relative;
-        height: auto;
+        height: 100% !important;
         top: 0;
         left: 0;
         width: 100%;
@@ -193,55 +205,7 @@ visibility: hidden;
         left: 0%;
     }
 }
-/* @media screen and (max-width: 480px){
-    .veen{
-        padding: 5px;
-        margin: 0;
-        width: 100%;
-        display: block;
-        height: 120%;
-
-    }
-    .veen > .wrapper{
-        position: relative;
-        height: auto;
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-    .veen > div{
-        display: inline-block;
-    }
-    .splits{
-        width: 50%;
-        background: #fff;
-        float: left;
-    }
-    .splits button{
-        width: 100%;
-        border-radius: 0;
-        background: #505050; 
-        border: 0;
-        opacity: .7;
-    }
-    .splits button.active{
-        opacity: 1;
-    }
-    .splits button.active{
-        opacity: 1;
-        background: #505050;
-    }
-    .splits.rgstr-btn button.active{
-        background: #505050;
-    }
-    .splits p{
-        display: none;
-    }
-    .veen > .wrapper.move{
-        left: 0%;
-    }
-} */
 
 input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill{
-box-shadow: inset 0 0 0 50px #fff
+    box-shadow: inset 0 0 0 50px #fff
 }

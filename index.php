@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,11 +27,13 @@ https://templatemo.com/tm-559-zay-shop
 </head>
 
 <body>
+
     <!-- Start Top Nav -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="templatemo_nav_top">
         <div class="container text-light">
             <div class="w-100 d-flex justify-content-between">
                 <div>
+                    
                     <i class="fa fa-envelope mx-2"></i>
                     <a class="navbar-sm-brand text-light text-decoration-none" href="mailto:info@company.com">info@company.com</a>
                     <i class="fa fa-phone mx-2"></i>
@@ -44,12 +47,14 @@ https://templatemo.com/tm-559-zay-shop
                 </div>
             </div>
         </div>
+        
     </nav>
     <!-- Close Top Nav -->
 
 
     <!-- Header -->
     <nav class="navbar navbar-expand-lg navbar-light shadow">
+        
         <div class="container d-flex justify-content-between align-items-center">
 
             <a class="navbar-brand text-success logo h1 align-self-center" href="index.php">
@@ -101,6 +106,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
 
         </div>
+        
     </nav>
     <!-- Close Header -->
 
