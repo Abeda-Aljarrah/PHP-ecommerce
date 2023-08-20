@@ -1,11 +1,20 @@
 <?php
-include '../conn.php';
-include '../config.php';
+include 'conn.php';
+include '../google/config.php'; // Include using correct relative path
+session_start();
+if (isset($_GET["logout"])) {
+	unset($_SESSION['userid']);
+	unset($_SESSION['role']);
+	
+	// print_r($_SESSION);
+	
+}
+
 ?>
 
 <?php
 if(isset($_POST['login'])){
-    include '../conn.php';
+    include 'conn.php';
 
     $loemail = $_POST['loemail'];
     $lopass = $_POST['lopass'];
@@ -14,23 +23,29 @@ if(isset($_POST['login'])){
         header('location: signin.php?error=emptyfields&loemail=' . $loemail);
         exit();
     } else {
-        $sql = "SELECT id, name, email, password FROM users WHERE name = :name OR email = :email";
+        $sql = "SELECT id, name, email, password,role FROM users WHERE name = :name OR email = :email";
         $stmt = $conn->prepare($sql);
         $stmt->bindParam(':name', $loemail); // Bind to name and email, as you're checking both fields
         $stmt->bindParam(':email', $loemail);
         $stmt->execute();
         $result = $stmt->fetch(PDO::FETCH_ASSOC); // Fetch a single row
-        
+		  
+		 
         if($result){ // Check if a user was found
             $passcheck = password_verify($lopass, $result['password']);
             if($passcheck == false){
                 header('location: signin.php?error=wrongpassword');
                 exit();
             } else if($passcheck == true){
-                session_start();
+                
                 $_SESSION['userid'] = $result['id'];
                 $_SESSION['useridname'] = $result['name'];
-                header('location: ../index.php');
+				$_SESSION['role']=$result['role'];
+                if(isset($_SESSION["page"])){
+					header("location: $_SESSION[page]");
+				}else{
+					header("location: home.php");
+				}  
                 exit();
             }
         } else {
@@ -71,12 +86,12 @@ if(isset($_POST['login'])){
 					<h3>Login</h3>
                     <?php
 					if (isset($_GET['error'])) {
-						if ($_GET['error'] == "emptyfieldes") {
-							echo "<span>Fill all the fields! </span>";
+						if ($_GET['error'] == "emptyfields") {
+							echo "<span> Fill all the fields! </span>";
 						} else if ($_GET['error'] == "wrongpassword") {
-							echo "<span>Wrong Password! </span>";
+							echo "<span> Wrong Password! </span>";
 						}  else if ($_GET['error'] == "nouser") {
-							echo "<span>No User Found, Please Register!</span>";
+							echo "<span> No User Found, Please Register!</span>";
 						}
 					} 
 					?>

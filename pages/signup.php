@@ -1,11 +1,11 @@
 <?php
-include '../conn.php';
-include '../config.php';
+include 'conn.php';
+include '../google/config.php'; // Include using correct relative path
 ?>
 <?php
 
 if (isset($_POST['Register'])) {
-	include '../conn.php';
+	include 'conn.php';
 
 	$name = $_POST['name'];
 	$email = $_POST['email'];
@@ -23,7 +23,7 @@ if (isset($_POST['Register'])) {
 		header('location:signup.php?error=invalidemail&name=' . $name);
 		exit();
 	} elseif (!preg_match("/^[a-zA-Z0-9]*$/", $name)) {
-		header('location:signup.php?error=invalidname$email=' . $email);
+		header('location: signup.php?error=' . urlencode('invalidname') . '&name=' . $name);
 		exit();
 	} elseif (!preg_match("/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/", $pass)) {
 		header('location:signup.php?error=invalidpass&name=' . $name . '$email=' . $email);
@@ -39,7 +39,7 @@ if (isset($_POST['Register'])) {
 		$rowCount = $stmt->rowCount();
 
 		if ($rowCount > 0) {
-			header('location: signup.php?error=usertaken$name=' . $name);
+			header('location: signup.php?error=' . urlencode('user taken') . '&name=' . $name);
 			exit();
 		} else {
 			$hashedPassword = password_hash($pass, PASSWORD_DEFAULT); // Hash the password
@@ -120,11 +120,11 @@ if (isset($_POST['Register'])) {
 					<?php
 					if (isset($_GET['error'])) {
 						if ($_GET['error'] == "emptyfieldes") {
-							echo "<span>Fill all the fields! </span>";
-						} else if ($_GET['error'] == "invalidemailname") {
-							echo "<span>invalid email and name! </span>";
-						}  else if ($_GET['error'] == "usertaken") {
-							echo "<span>user taken! </span>";
+							echo "<span> Fill all the fields! </span>";
+						}else if ($_GET['error'] == "invalidemailname") {
+							echo "<span> invalid email and name! </span>";
+						}else if ($_GET['error'] == urldecode("user taken")) {
+							echo "<span>User taken!</span>";
 						}else if ($_GET['error'] == "success") {
 							echo "<span style='color:green; margin-bottom: 20px;'>Registration successful! You can now log in.</span>";
 							echo '<br>';
@@ -134,17 +134,16 @@ if (isset($_POST['Register'])) {
 					<div class="name">
 						<input type="text" name="name">
 						<label>Full Name</label>
-						<span><?php if (isset($_GET['error'])) {
-						if ($_GET['error'] == "invalidname") {
-							echo "<span>invalid name! </span>";
-						}} ?></span>
+						<span><?php if (isset($_GET['error']) && $_GET['error'] === 'invalidname') {
+            echo "<span> Name should only contain letters and digits (no spaces or special characters). </span>";
+        } ?></span>
 					</div>
 					<div class="mail">
 						<input type="email" name="email">
 						<label>Email</label>
 						<span><?php if (isset($_GET['error'])) {
 						if ($_GET['error'] == "invalidemail") {
-							echo "<span>invalid email! </span>";
+							echo "<span>Invalid email format! Please enter a valid email address! </span>";
 						}} ?></span>
 					</div>
 					<div class="passwd">
@@ -152,7 +151,7 @@ if (isset($_POST['Register'])) {
 						<label>Password</label>
 						<span><?php if (isset($_GET['error'])) {
 						if ($_GET['error'] == "invalidpass") {
-							echo "<span>invalid pass! </span>";
+							echo "<span>Password must contain at least one uppercase letter, one lowercase letter, one digit, one special character, and be at least 8 characters long. </span>";
 						}} ?></span>
 					</div>
 					<div class="uid">
@@ -160,7 +159,7 @@ if (isset($_POST['Register'])) {
 						<label>Confirm Password</label>
 						<span><?php if (isset($_GET['error'])) {
 						if ($_GET['error'] == "checkpassword") {
-							echo "<span>check password! </span>";
+							echo "<span>Passwords do not match! </span>";
 						}} ?></span>
 
 					</div>
