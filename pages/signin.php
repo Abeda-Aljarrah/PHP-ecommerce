@@ -102,6 +102,9 @@ if(isset($_POST['login'])){
 					<div class="passwd">
 						<input type="password" name="lopass">
 						<label>Password</label>
+						<div style=" text-align: start; ">
+							<a class="btn dark" href="forgotPassword.php" style="color:black !important; text-decoration: underline; ">Reset password?</a>
+						</div>
 					</div>
 					<div class="submit">
 						<button class="dark" name="login">Login</button>
@@ -111,6 +114,7 @@ if(isset($_POST['login'])){
 						<button onclick="window.location = '<?php echo $login_url; ?>'"type="button" ><i class="fab fa-brands fa-google"></i></button>
 						<button><i class="fab fa-brands fa-facebook-f"></i></button>
 					</div>
+					
 				</form>
 				
 			</div>

@@ -43,7 +43,7 @@ https://templatemo.com/tm-559-zay-shop
 <nav class="navbar navbar-expand-lg navbar-light shadow">
     <div class="container d-flex justify-content-between align-items-center">
 
-        <img src="../pages/logo (2).png" alt="logo img" style="width:150px">
+        <img src="../assets/img/logo" alt="logo img" style="width:200px">
         <!-- <a class="navbar-brand text-success logo h1 align-self-center" href="index.php">
                 Mobiletech
             </a> -->
@@ -65,11 +65,12 @@ https://templatemo.com/tm-559-zay-shop
                         <a class="nav-link" href="../pages/shop.php">Shop</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="../co-ab ramez/about.php">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../co-ab ramez/contact.php">Contact</a>
-                        </li>
+                        <a class="nav-link" href="../pages/contact.php">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../pages/about.php">About</a>
+                    </li>
+                </ul>
                 </ul>
             </div>
             <div class="navbar align-self-center d-flex">
@@ -100,7 +101,7 @@ https://templatemo.com/tm-559-zay-shop
                         if (isset($_SESSION['role'])) {
 
                             if ($role == 1) {
-                                echo"hi";
+                             
                                 echo <<<here
 
                                        <a class="nav-icon position-relative text-decoration-none" href="../admin_pages/Admin.php">

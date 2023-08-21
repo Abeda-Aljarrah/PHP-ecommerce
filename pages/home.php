@@ -19,11 +19,10 @@
 
 <body>
 
-    
+
 
     <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
-        aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -76,8 +75,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/sliderimg2.png" alt=""
-                                style=" height: 380px; margin : 50px  0px 80px  100px;  ">
+                            <img class="img-fluid" src="../assets/img/sliderimg2.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -97,10 +95,9 @@
             </div>
             <div class="carousel-item">
                 <div class="container">
-                <div class="row p-5">
+                    <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/s3.png" alt=""
-                                style=" height: 380px; margin : 50px  0px 80px  100px;  ">
+                            <img class="img-fluid" src="../assets/img/s3.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -119,12 +116,10 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
-            role="button" data-bs-slide="next">
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
         </a>
     </div>
@@ -144,11 +139,11 @@
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1"> phones </h1>
-                <p>
+                <h1 class="h1 p-2" style=" background-color: #59AB6E; color: white; border-radius: 10px; "> <strong>Categories</strong> </h1>
+                <!-- <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
-                </p>
+                </p> -->
             </div>
 
         </div>
@@ -189,68 +184,70 @@
 
     ?>
 
-   
 
-        <!-- Insert phone type products in the phone category -->
-        <div class="category-container">
-            <div class="products" id="iphone-products">
-                <section class="bg-light">
-                <?php foreach ($phoneType as $category): ?>
-                               
+
+    <!-- Insert phone type products in the phone category -->
+    <div class="category-container">
+        <div class="products" id="iphone-products">
+            <section class="bg-light">
+                <?php foreach ($phoneType as $category) : ?>
+
                     <div class="container py-5">
                         <div class="row text-center py-3">
                             <div class="col-lg-6 m-auto">
-                                <h1 class="h1"><strong>Latest <?php echo $category['name']; ?> Phones</strong></h1>
+                                <h2 class="h2 p-2" style=" background-color: #59AB6E; color: white; border-radius: 10px; "><strong>Latest <?php echo $category['name']; ?> Phones</strong></h2>
                                 <p>
                                     Discover the newest <?php echo $category['name']; ?> models.
                                 </p>
                             </div>
                         </div>
                         <div class="row mr-4">
-                     
-                        <?php foreach ($phoneProducts as $product): ?>
-                            <?php if($product['price']>500 && $category['id']==$product['category_id']){?>
 
-                                <div class="col-12 col-md-4 mb-4">
-                                    <div class="card h-100">
-                                        <a href="shop-single.php?id=<?php echo $product['id'] ?>">
-                                            <img src="../admin_pages/uploads/<?php echo $product['main_picture'] ?>" class="card-img-top p-4" alt="...">
-                                        </a>
-                                        <div class="card-body">
+                           
 
-                                            <a href="shop-single.php?id=<?php echo $product['id'] ?>" class="h2 text-decoration-none text-dark">
-                                                <?php echo $product['product_name']; ?>
+                            <?php foreach ($phoneProducts as $product) : ?>
+                                <?php if ($product['price'] > 500 && $category['id'] == $product['category_id']) { ?>
+
+                                    <div class="col-12 col-md-4 mb-4">
+                                        <div class="card h-100">
+                                            <a href="shop-single.php?id=<?php echo $product['id'] ?>">
+                                                <img src="../admin_pages/uploads/<?php echo $product['main_picture'] ?>" class="card-img-top p-4" alt="...">
                                             </a>
-                                            <p class="card-text">
-                                                <?php echo $product['price']; ?>
-                                            </p>
+                                            <div class="card-body">
+
+                                                <a href="shop-single.php?id=<?php echo $product['id'] ?>" class="h2 text-decoration-none text-dark">
+                                                    <?php echo $product['product_name']; ?>
+                                                </a>
+                                                <p class="card-text">
+                                                    <?php echo $product['price']; ?>
+                                                </p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>  <?php } ?> 
-                                 <?php endforeach; ?>
-                                 
-                          
+                                    </div> <?php } ?>
+                            <?php endforeach; ?>
+
+
                         </div>
                     </div>
-                            <?php endforeach; ?>
-                            
-                </section>
-            </div>
+                <?php endforeach; ?>
+
+            </section>
         </div>
+    </div>
 
 
-        <!-- Your remaining content here -->
+    <!-- Your remaining content here -->
 
 
-        <?php include 'footer.php'; ?>
+    <?php include 'footer.php'; ?>
 
-        <!-- Start Script -->
-        <script src="../assets/js/jquery-1.11.0.min.js"></script>
-        <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
-        <script src="../assets/js/bootstrap.bundle.min.js"></script>
-        <script src="../assets/js/templatemo.js"></script>
-        <script src="../assets/js/custom.js"></script>
-        <!-- End Script -->
-    </body>
+    <!-- Start Script -->
+    <script src="../assets/js/jquery-1.11.0.min.js"></script>
+    <script src="../assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/templatemo.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <!-- End Script -->
+</body>
 
-    </html>
+</html>

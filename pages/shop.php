@@ -85,9 +85,15 @@ https://templatemo.com/tm-559-zay-shop
 
     <!-- Start Content -->
     <div class="container py-5">
-        <div class="row">
+        <div class="row" style="justify-content:flex-end">
             <!-- select the category from the category  -->
-            <div class="col-lg-3">
+            <div class="col-lg-3" style="position: fixed;
+                            flex: 0 0 auto;
+                            width: 25%;
+                            top: 112p;
+                            left: 35px;
+                            x: ;
+                            z-index: 30;">
                 <div class="list-unstyled templatemo-accordion">
                     <div class="pb-3">
                         <h2 class="h2 pb-2 pt-4">Categories</h2>
@@ -109,7 +115,7 @@ https://templatemo.com/tm-559-zay-shop
             </div>
 
             <div class="col-lg-9">
-                <div class="row">
+                <div class="row" >
 
                     <?php // Check if a specific category is selected
                     if (isset($_GET['category_id'])) {
@@ -128,7 +134,7 @@ https://templatemo.com/tm-559-zay-shop
                     ?>
 
                 </div>
-                <div class="row">
+                <div class="row" style="justify-content: flex-end; !important" >
                     
                     <?php
                     //  ******** search *********//
@@ -149,6 +155,7 @@ https://templatemo.com/tm-559-zay-shop
                             <option value="pink" style="background-color:pink;color:white;">Pink</option>
                             <option value="black" style="background-color:black;color:white;">Black</option>
                             <option value="grey" style="background-color:grey;color:white;">Grey</option>
+                            <option value="green" style="background-color:green;color:white;">Green</option>
                         </select>
                         <input type="submit" value="Filter" class="btn btn-warning px-4 py-2 mx-3">
                     </form>
@@ -209,7 +216,7 @@ https://templatemo.com/tm-559-zay-shop
                                         <div class="col-md-4">
                                             <div class="card mb-4 product-wap rounded-0">
                                                 <div class="card rounded-0">
-                                                <img class="card-img rounded-0 img-fluid p-4"style="height: 350px;" src="../assets/img/$product[main_picture]">
+                                                <img class="card-img rounded-0 img-fluid p-4" src="../assets/img/$product[main_picture]">
                                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                                         <ul class="list-unstyled">
                                                             <li><a class="btn btn-success text-white" href="shop-single.php?id=$product[id]"><i class="far fa-heart"></i></a></li>
@@ -219,7 +226,7 @@ https://templatemo.com/tm-559-zay-shop
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
-                                                    <a href="shop-single.php?id=$product[id]" class="h3 text-decoration-none product_name"><strong class="">$product[product_name]</strong></a>
+                                                    <a href="shop-single.php?id=$product[id]" class="h3 text-decoration-none product_name"><strong style="overflow:hidden">$product[product_name]</strong></a>
                                                     <ul class="w-100 list-unstyled d-flex justify-content-between mb-0">
                                                         <p class="description">$product[discription]</p>
                                                     </ul>
@@ -272,7 +279,7 @@ https://templatemo.com/tm-559-zay-shop
                                         <div class="col-md-4">
                                             <div class="card mb-4 product-wap rounded-0">
                                                 <div class="card rounded-0">
-                                                <img class="card-img rounded-0 img-fluid p-4"style="height: 350px;" src="../assets/img/$product[main_picture]">
+                                                <img class="card-img rounded-0 img-fluid p-4" src="../assets/img/$product[main_picture]">
                                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                                         <ul class="list-unstyled">
                                                             <li><a class="btn btn-success text-white" href="shop-single.php?id=$product[id]"><i class="far fa-heart"></i></a></li>
@@ -338,7 +345,7 @@ https://templatemo.com/tm-559-zay-shop
                                     <div class="col-md-4">
                                         <div class="card mb-4 product-wap rounded-0">
                                             <div class="card rounded-0">
-                                                <img class="card-img rounded-0 img-fluid p-4"style="height: 350px;" src="../assets/img/$product[main_picture]">
+                                                <img class="card-img rounded-0 img-fluid p-4"  src="../assets/img/$product[main_picture]">
                                                 <div class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                                     <ul class="list-unstyled">
                                                         <li><a class="btn btn-success text-white" href="shop-single.php?id=$product[id]"><i class="far fa-heart"></i></a></li>

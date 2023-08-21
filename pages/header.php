@@ -53,7 +53,7 @@ https://templatemo.com/tm-559-zay-shop
         <div class="container d-flex justify-content-between align-items-center">
 
 
-            <img src="../assets/img/logo" alt="logo img" style="width:150px">
+            <img src="../assets/img/logo" alt="logo img" style="width:200px">
             <!-- <a class="navbar-brand text-success logo h1 align-self-center" href="index.php">
                 Mobiletech
             </a> -->
@@ -75,10 +75,10 @@ https://templatemo.com/tm-559-zay-shop
                             <a class="nav-link" href="./shop.php">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./about.php">About</a>
+                            <a class="nav-link" href="./contact.php">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact.php">Contact</a>
+                            <a class="nav-link" href="./about.php">About</a>
                         </li>
                     </ul>
                 </div>

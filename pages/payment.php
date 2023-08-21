@@ -63,22 +63,21 @@ try {
                     <div>
                         <img src="../admin_pages/uploads/$arr[main_picture]"
                             class="img-fluid rounded-3" alt="Shopping item"
-                            style="width: 65px;">
+                            ">
                     </div>
                     <div class="ms-3">
                         <h5>$arr[product_name]</h5>
-                        <p class="small mb-0">$arr[discription]</p>
+                        <p class="small mb-0" style="font-size: 15px !important";>$arr[discription]</p>
                     </div>
                 </div>
                 <div class="d-flex flex-row align-items-center">
-                    <div style="width: 50px;">
+                    <div style="width: 20px;">
                         <h5 class="fw-normal mb-0">$value</h5>
                     </div>
                     <div style="width: 80px;">
                         <h5 class="mb-0">$$arr[price]</h5>
                     </div>
-                    <a href="#!" style="color: #cecece;"><i
-                            class="fas fa-trash-alt"></i></a>
+                    
                 </div>
             </div>
         </div>
@@ -97,7 +96,7 @@ here;
                                 </div>
                                 <div class="col-lg-5">
 
-                                    <div class="card bg-primary text-white rounded-3">
+                                    <div class="card bg-primary text-white rounded-3" style="background-color: #9ad5b1!important;">
                                         <div class="card-body">
                                             <div class="d-flex justify-content-between align-items-center mb-4">
                                                 <h5 class="mb-0">Card details</h5>
@@ -185,16 +184,16 @@ here;
                                                     </p>
                                                 </div>
                                                 <?php include("ndex.php") ?>
-                                                <button type="submit" class="btn btn-info btn-block btn-lg">
+                                                <button type="submit" class="btn btn-warning btn-block btn-lg">
                                                     <div class="d-flex justify-content-between">
-                                                        <span>$
+                                                        <span style =" color:white !important">$
                                                             <?php
                                                             echo $_SESSION["cart"]["full_price"]
 
                                                                 ?>
                                                         </span>
-                                                        <span>Checkout <i
-                                                                class="fas fa-long-arrow-alt-right ms-2"></i></span>
+                                                        <span style =" color:white !important">Checkout <i
+                                                                class="fas fa-long-arrow-alt-right ms-2" style =" color:white !important"></i></span>
                                                     </div>
                                                 </button>
                                             </form>
