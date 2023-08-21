@@ -97,7 +97,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/s3.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
+                            <img class="img-fluid" src="../assets/img/sliderimg3.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
