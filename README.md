@@ -8,6 +8,7 @@ HTML,
 CSS,
 JAVASCRIPT,
 PHP,
+MySQL
 
 team member:
 Salam Tamimi,
@@ -15,4 +16,4 @@ Abeda Jarrah,
 Lama Nazzal,
 Ahmad Khatatbeh,
 Murad Shorman,
-Ramez Rejjal,
+Ramez Rejjal
