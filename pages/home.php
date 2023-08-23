@@ -22,7 +22,8 @@
 
 
     <!-- Modal -->
-    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade bg-white" id="templatemo_search" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="w-100 pt-1 mb-5 text-right">
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -52,7 +53,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/sliderimg1.png" alt="">
+                            <img class="img-fluid" src="../assets/img/sliderimg1-r.png" alt="">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
@@ -75,7 +76,8 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/sliderimg2.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
+                            <img class="img-fluid" src="../assets/img/samaung_5-1-r.png" alt=""
+                                style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -97,7 +99,8 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/sliderimg3.png" alt="" style=" height: 380px; margin : 50px  0px 80px  100px;  ">
+                            <img class="img-fluid" src="../assets/img/samaung_5-1-r.png" alt=""
+                                style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
@@ -116,10 +119,12 @@
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="prev">
+        <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#template-mo-zay-hero-carousel"
+            role="button" data-bs-slide="prev">
             <i class="fas fa-chevron-left"></i>
         </a>
-        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel" role="button" data-bs-slide="next">
+        <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#template-mo-zay-hero-carousel"
+            role="button" data-bs-slide="next">
             <i class="fas fa-chevron-right"></i>
         </a>
     </div>
@@ -139,7 +144,9 @@
     <section class="container py-5">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1 p-2" style=" background-color: #59AB6E; color: white; border-radius: 10px; "> <strong>Categories</strong> </h1>
+                <h1 class="h1 p-2" style=" background-color: #59AB6E; color: white; border-radius: 10px; ">
+                    <strong>Categories</strong>
+                </h1>
                 <!-- <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
@@ -147,14 +154,17 @@
             </div>
 
         </div>
-        <div class="row mx-1 justify-content-center">
+        <div class="row mx-1 justify-content-center ">
             <?php while ($category = $categories_result->fetch(PDO::FETCH_ASSOC)) { ?>
-                <div class="col-12 col-md-4 p-5 mt-3 ">
-                    <a href="pages\shop.php"><img src="../admin_pages/uploads/<?php echo $category['picture'] ?>" class="img-fluid border" style="height:400px"></a>
+                <div class="col-12 col-md-4 p-5 mt-3 " style=" box-shadow: rgba(89,171,110,0.25) 0px 13px 27px -5px, rgba(89, 171, 110, 0.3) 0px 8px 16px -8px;">
+                    <a href="shop.php?category_id=<?php print_r($category['id']) ?>"><img
+                            src="../admin_pages/uploads/<?php echo $category['picture'] ?>" class="img-fluid border"
+                            style="height:350px"></a>
                     <h5 class="text-center mt-3 mb-3">
                         <?php echo $category['name']; ?>
                     </h5>
-                    <p class="text-center"><a class="btn btn-success" href="shop.php?category_id=<?php print_r($category['id']) ?>">Go Shop</a></p>
+                    <p class="text-center"><a class="btn btn-success"
+                            href="shop.php?category_id=<?php print_r($category['id']) ?>">Go Shop</a></p>
                 </div>
             <?php } ?>
         </div>
@@ -190,40 +200,50 @@
     <div class="category-container">
         <div class="products" id="iphone-products">
             <section class="bg-light">
-                <?php foreach ($phoneType as $category) : ?>
+                <?php foreach ($phoneType as $category): ?>
 
                     <div class="container py-5">
                         <div class="row text-center py-3">
                             <div class="col-lg-6 m-auto">
-                                <h2 class="h2 p-2" style=" background-color: #59AB6E; color: white; border-radius: 10px; "><strong>Latest <?php echo $category['name']; ?> Phones</strong></h2>
-                                <p>
-                                    Discover the newest <?php echo $category['name']; ?> models.
-                                </p>
+                                <h2 class="h2 p-2" >
+                                    <strong>Latest
+                                        <?php echo $category['name']; ?> Phones
+                                    </strong>
+                                </h2>
+                               
                             </div>
                         </div>
-                        <div class="row mr-4">
+                        <div class="row" style="justify-content:center">
 
-                           
 
-                            <?php foreach ($phoneProducts as $product) : ?>
+
+                            <?php $num = 0 ?>
+                            <?php foreach ($phoneProducts as $key => $product): ?>
+
                                 <?php if ($product['price'] > 500 && $category['id'] == $product['category_id']) { ?>
+                                    <?php if ($num < 3) { ?>
 
-                                    <div class="col-12 col-md-4 mb-4">
-                                        <div class="card h-100">
-                                            <a href="shop-single.php?id=<?php echo $product['id'] ?>">
-                                                <img src="../admin_pages/uploads/<?php echo $product['main_picture'] ?>" class="card-img-top p-4" alt="...">
-                                            </a>
-                                            <div class="card-body">
-
-                                                <a href="shop-single.php?id=<?php echo $product['id'] ?>" class="h2 text-decoration-none text-dark">
-                                                    <?php echo $product['product_name']; ?>
+                                        <?php $num += 1; ?>
+                                        <div class="col-12 col-md-3" >
+                                            <div class="card h-60" style=" box-shadow: rgba(89,171,110,0.25) 0px 13px 27px -5px, rgba(89, 171, 110, 0.3) 0px 8px 16px -8px;">
+                                                <a href="shop-single.php?id=<?php echo $product['id'] ?>">
+                                                    <img src="../admin_pages/uploads/<?php echo $product['main_picture'] ?>"
+                                                        class="card-img-top p-4" alt="...">
                                                 </a>
-                                                <p class="card-text">
-                                                    <?php echo $product['price']; ?>
-                                                </p>
+                                                <div class="card-body">
+
+                                                    <a href="shop-single.php?id=<?php echo $product['id'] ?>"
+                                                        class="h2 text-decoration-none text-dark" style="overflow:hidden; height: 20px;">
+                                                        <?php echo $product['product_name']; ?>
+                                                    </a>
+                                                    <p class="card-text">
+                                                        <?php echo $product['price']; ?>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div> <?php } ?>
+                                    <?php } ?>
+                                <?php } ?>
                             <?php endforeach; ?>
 
 

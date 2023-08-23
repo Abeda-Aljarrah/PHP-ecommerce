@@ -41,6 +41,10 @@ if(isset($_POST['login'])){
                 $_SESSION['userid'] = $result['id'];
                 $_SESSION['useridname'] = $result['name'];
 				$_SESSION['role']=$result['role'];
+				if ($result['role']==1) {
+					header("location: ../admin_pages/Admin.php");
+					exit();
+				}
                 if(isset($_SESSION["page"])){
 					header("location: $_SESSION[page]");
 				}else{
