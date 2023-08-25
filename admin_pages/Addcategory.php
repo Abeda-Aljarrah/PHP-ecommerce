@@ -56,16 +56,16 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> 
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
 
               </div>
@@ -251,7 +251,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -291,16 +291,16 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> 
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
                   </a>
                   <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    categories
+                    Categories
                   </a>
 
                 </div>
@@ -392,7 +392,7 @@ include("connectdata.php");
 
 
           <div class="container">
-            <h2>Add category</h2>
+            <h2 style="margin: 30px 0;" >Add category</h2>
             <form action="Addcategory.php" method="POST" enctype="multipart/form-data">
 
 
@@ -403,7 +403,7 @@ include("connectdata.php");
 
 
               <div class="form-group">
-                <label for="images">main-image:</label>
+                <label for="images">Main-image:</label>
                 <input type="file" class="" id="image" placeholder="Choose Images" name="main-image" required>
               </div>
 

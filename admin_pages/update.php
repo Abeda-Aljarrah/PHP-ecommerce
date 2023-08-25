@@ -57,12 +57,12 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  Addprodcut
+                  Add Products
                 </a>
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
@@ -270,10 +270,10 @@ include("connectdata.php");
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     dashboard
                   </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    Addprodcut
+                    Add products
                   </a>
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
@@ -329,7 +329,7 @@ include("connectdata.php");
         <main>
 
           <div class="container">
-            <h2>Update Product</h2>
+            <h2 style="margin-bottom: 30px; margin-top: 30px;">Update Product</h2>
             <form action="updatepro.php?id=<?php echo $id?>" method="POST" enctype="multipart/form-data">
 
 
@@ -338,46 +338,52 @@ include("connectdata.php");
                 <input type="text" class="form-control" value="<?php echo htmlspecialchars($name) ?>" id="name" placeholder="Enter name" name="name">
               </div>
               <div class="form-group ">
-                <label for="category">choose category :</label>
+                <label for="category">Choose category :</label>
                 <select name="category" id="category">
-                  <option value="<?php echo htmlspecialchars($category) ?>">iphone</option>
-                  <option value="<?php echo htmlspecialchars($category) ?>">samsung</option>
+                  <option value="<?php echo htmlspecialchars($category) ?>">Iphone</option>
+                  <option value="<?php echo htmlspecialchars($category) ?>">Samsung</option>
                   <option value="<?php echo htmlspecialchars($category) ?>">Huawei</option>
 
                 </select>
               </div>
               <div class="form-group">
                 <label for="price">Price:</label>
-                <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" value="<?php echo htmlspecialchars($price) ?>">
+                <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" value="<?php echo '$' . htmlspecialchars($price); ?>">
               </div>
               <div class="form-group">
-                <label for="product_color">color:</label>
+                <label for="product_color">Color:</label>
                 <input type="text" class="form-control" id="product_color" placeholder="Enter product_color" name="product_color" value="<?php echo htmlspecialchars($product_color) ?>">
               </div>
               <div class="form-group">
-                <label for="specification">spesification:</label>
+                <label for="specification">Specifications:</label>
                 <input type="text" class="form-control" id="specification" placeholder="Enter specification" name="specification" value="<?php echo htmlspecialchars($specification) ?>">
               </div>
               <div class="form-group">
-                <label for="capacity">Price:</label>
+                <label for="capacity">Capacity:</label>
                 <input type="text" class="form-control" id="capacity" placeholder="Enter capacity" name="capacity" value="<?php echo htmlspecialchars($capacity) ?>">
               </div>
               <div class="form-group">
-                <label for="Description">Discription:</label>
+                <label for="Description">Description:</label>
                 <input type="text" class="form-control" id="description" value="<?php echo ($description) ?>" placeholder="Enter description" name="description" required>
               </div>
+              <br>
               <div class="form-group">
-                <label for="images">main-image:</label>
+                <label for="Description">Images:</label>
+                <br> <br>
+                <label for="images">Main-image:</label>
                 <input type="file" class="" id="image" value="<?php echo htmlspecialchars($main_image) ?>" placeholder="Choose Images" name="main-image">
-                <label for="images">image1:</label>
+                <br> <br>
+                <label for="images">First-image:</label>
                 <input type="file" class="" id="image" value="<?php echo htmlspecialchars($image_name1) ?>" placeholder="Choose Images" name="image1">
-                <label for="images">image2:</label>
+                <br> <br>
+                <label for="images">Second-image:</label>
                 <input type="file" class="" id="image" value="<?php echo htmlspecialchars($image_name2) ?>" placeholder="Choose Images" name="image2">
-                <label for="images">image3:</label>
+                <br> <br>
+                <label for="images">Third-image:</label>
                 <input type="file" class="" id="image" value="<?php echo htmlspecialchars($image_name3) ?>" placeholder="Choose Images" name="image3">
               </div>
               <div class="form-group">
-                <label for="status">status:</label>
+                <label for="status">Status:</label>
                 <input type="text" class="form-control" id="status" value="<?php echo htmlspecialchars($status) ?>" placeholder="status" name="status">
               </div>
 

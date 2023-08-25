@@ -26,7 +26,6 @@ include("connectdata.php");
 <body>
   <div x-data="setup()" x-init="$refs.loading.classList.add('hidden'); setColors(color);" :class="{ 'dark': isDark}">
     <div class="flex h-screen antialiased text-gray-900 bg-gray-100 dark:bg-dark dark:text-light">
-      Loading screen
       <div x-ref="loading" class="fixed inset-0 z-50 flex items-center justify-center text-2xl font-semibold text-white bg-primary-darker">
         Loading.....
       </div>
@@ -57,12 +56,12 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  Addprodcut
+                  Add products
                 </a>
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
@@ -268,12 +267,12 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    Addprodcut
+                    Add products
                   </a>
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
@@ -286,7 +285,6 @@ include("connectdata.php");
 
         <!-- Main content -->
 
-        //display product
         <?php
         if (isset($_GET['id'])) {
           $id = $_GET['id'];
@@ -309,7 +307,7 @@ include("connectdata.php");
         <main>
 
           <div class="container">
-            <h2>Update Product</h2>
+            <h2 style="margin: 30px 0;">Update Product</h2>
             <form action="updateprogategory.php?id=<?php echo $id?>" method="POST" enctype="multipart/form-data">
 
 
@@ -320,7 +318,7 @@ include("connectdata.php");
 
 
               <div class="form-group">
-                <label for="images">main-image:</label>
+                <label for="images">Main-image:</label>
                 <input type="file" class="" id="image" value="<?php echo htmlspecialchars($main_image_category) ?>" placeholder="Choose Images" name="main-image">
               </div>
 

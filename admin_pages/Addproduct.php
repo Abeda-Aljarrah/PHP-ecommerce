@@ -71,16 +71,16 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> 
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
               </div>
 
@@ -205,7 +205,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -295,7 +295,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -334,16 +334,16 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> 
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
                   </a>
                   <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    categories
+                    Categories
                   </a>
 
                 </div>
@@ -488,8 +488,8 @@ price,status,main_picture,picture1,picture2,picture3,product_color,specification
         <main>
 
 
-          <div class="container">
-            <h2>Add Product</h2>
+          <div class="container" style="max-width: 100%; margin-left: 30px;" >
+            <h2 style="margin-bottom: 30px; margin-top: 30px;" >Add Product</h2>
             <form action="Addproduct.php" method="POST" enctype="multipart/form-data">
 
 
@@ -502,7 +502,7 @@ price,status,main_picture,picture1,picture2,picture3,product_color,specification
                 <input type="text" class="form-control" id="Color" placeholder="Enter Color" name="product_color">
               </div>
               <div class="form-group">
-                <label for="name">Spesification:</label>
+                <label for="name">Specifications:</label>
                 <input type="text" class="form-control" id="Specification" placeholder="Enter Spesification" name="specification">
               </div>
               <div class="form-group">
@@ -511,7 +511,7 @@ price,status,main_picture,picture1,picture2,picture3,product_color,specification
               </div>
 
               <div class="form-group ">
-                <label for="category">choose category :</label>
+                <label for="category">Choose category :</label>
                 <select name="category" id="category">
                   <?php
                   foreach ($result as $value) {
@@ -536,21 +536,23 @@ price,status,main_picture,picture1,picture2,picture3,product_color,specification
                 <input type="number" class="form-control" id="price" placeholder="Enter price" name="price" required>
               </div>
               <div class="form-group">
-                <label for="Description">Discription:</label>
+                <label for="Description">Description:</label>
                 <input type="text" class="form-control" id="description" placeholder="Enter description" name="description" required>
               </div>
               <div class="form-group">
-                <label for="images">main-image:</label>
+                <label for="Description">Images:</label>
+                <br>
+                <label for="images">Main-image:</label>
                 <input type="file" class="" id="image" placeholder="Choose Images" name="main-image" required>
-                <label for="images">image1:</label>
+                <label for="images">First-image:</label>
                 <input type="file" class="" id="image" placeholder="Choose Images" name="image1" required>
-                <label for="images">image2:</label>
+                <label for="images">Second-image:</label>
                 <input type="file" class="" id="image" placeholder="Choose Images" name="image2" required>
-                <label for="images">image3:</label>
+                <label for="images">Third-image:</label>
                 <input type="file" class="" id="image" placeholder="Choose Images" name="image3" required>
               </div>
               <div class="form-group">
-                <label for="status">status:</label>
+                <label for="status">Status:</label>
                 <input type="text" class="form-control" id="status" placeholder="status" name="status" required>
               </div>
 

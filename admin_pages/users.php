@@ -11,7 +11,7 @@ include("connectdata.php");
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Mobile-Tech Dashboard | Add productPage</title>
+  <title>Mobile-Tech</title>
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="../build/css/tailwind.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
@@ -55,21 +55,21 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  Addprodcut
+                  Add products
                 </a>
                 <a href="Addcategory.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  Addcategory
+                  Add category
                 </a>
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
 
               </div>
@@ -187,7 +187,7 @@ include("connectdata.php");
 
                                      <a class="nav-icon position-relative text-decoration-none" href="../admin_pages/profile.php">
                                      <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                                      profile
+                                      Profile
                                         </a>
                            here;
                     }
@@ -196,7 +196,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -299,12 +299,12 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    Addprodcut
+                    Add products
                   </a>
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
@@ -321,15 +321,15 @@ include("connectdata.php");
 
           <div class="flex flex-1 h-full p-4  ">
             <div class="container">
-              <h2>Users</h2>
+              <h2 style="margin-bottom: 30px;">Users</h2>
               </p>
               <table class="table" style="width: 100%;">
                 <thead>
                   <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>email</th>
-                    <th>address</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Address</th>
                   </tr>
                 </thead>
                 <tbody>

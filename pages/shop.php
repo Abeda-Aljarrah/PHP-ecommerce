@@ -221,7 +221,7 @@ https://templatemo.com/tm-559-zay-shop
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
-                                                        <i class="text-muted fa fa-star"></i>
+                                                        <i class="text-warning fa fa-star"></i>
                                                         <i class="text-muted fa fa-star"></i>
                                                     </li>
                                                 </ul>
@@ -291,7 +291,7 @@ https://templatemo.com/tm-559-zay-shop
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
-                                                        <i class="text-muted fa fa-star"></i>
+                                                        <i class="text-warning fa fa-star"></i>
                                                         <i class="text-muted fa fa-star"></i>
                                                     </li>
                                                 </ul>
@@ -360,7 +360,7 @@ https://templatemo.com/tm-559-zay-shop
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
                                                         <i class="text-warning fa fa-star"></i>
-                                                        <i class="text-muted fa fa-star"></i>
+                                                        <i class="text-warning fa fa-star"></i>
                                                         <i class="text-muted fa fa-star"></i>
                                                     </li>
                                                 </ul>

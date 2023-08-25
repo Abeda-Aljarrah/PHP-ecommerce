@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Zay Shop - Contact</title>
+    <title>Mobile_Tech</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -115,7 +115,7 @@ https://templatemo.com/tm-559-zay-shop
         $subject = $_POST["subject"];
         $message = $_POST["message"];
 
-        $toEmail = "lama.nazzal23@gmail.com";
+        $toEmail = "jarrahabeda@gmail.com";
 
         $mailHeader = "Name: " . $name .
             "\r\n Email: " . $name .
@@ -149,7 +149,7 @@ https://templatemo.com/tm-559-zay-shop
 
     <div class="container py-5">
         <div class="row py-5">
-            <form class="col-md-9 m-auto" role="form" action="https://formsubmit.co/lama.nazzal23@gmail.com" method="POST" action="contact.php" name="emailContact">
+            <form class="col-md-9 m-auto" role="form" action="https://formsubmit.co/jarrahabeda@gmail.com" method="POST" action="contact.php" name="emailContact">
                 <div class="row">
                     <div class="form-group col-md-6 mb-3">
                         <label for="name">Name</label>

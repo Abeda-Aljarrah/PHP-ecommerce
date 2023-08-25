@@ -56,16 +56,16 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> 
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
 
 
@@ -192,7 +192,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -282,7 +282,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -321,16 +321,16 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> 
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
                   </a>
                   <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    categories
+                    Categories
                   </a>
 
                 </div>
@@ -344,16 +344,16 @@ include("connectdata.php");
         <main>
           <div class="flex flex-1 h-full p-4  ">
             <div class="container">
-              <h2>categories</h2>
+              <h2 style="margin-top: 30px; margin-bottom: 30px; " >Categories</h2>
               <p><a href="Addcategory.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700 btn btn-primary ">
                   Add-category
                 </a></p>
               <table class="table" style="width: 100%;">
                 <thead>
                   <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>image</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Image</th>
 
                   </tr>
 

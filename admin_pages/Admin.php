@@ -53,16 +53,16 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
 
               </div>
@@ -162,7 +162,7 @@ include("connectdata.php");
               <div class="relative" x-data="{ open: false }">
                 <button @click="open = !open; $nextTick(() => { if(open){ $refs.userMenu.focus() } })" type="button" aria-haspopup="true" :aria-expanded="open ? 'true' : 'false'" class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100">
                   <span class="sr-only">User menu</span>
-                  <img class="w-10 h-10 rounded-full" src="build/images/avatar.jpg" alt="Ahmed Kamel" />
+                  <img class="w-10 h-10 rounded-full" src="../build/images/avatar.jpg" alt="Ahmed Kamel" />
                 </button>
 
                 <!-- User dropdown menu -->
@@ -191,7 +191,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -293,21 +293,21 @@ include("connectdata.php");
                     <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                     <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                     <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                      dashboard
+                      Dashboard
                     </a> <a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                      Addprodcut
+                      Add products
                     </a>
                     <a href="Addcategory.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                      Addcategory
+                      Add category
                     </a>
                     <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                      users
+                      Users
                     </a>
                     <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                       Products
                     </a>
                     <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                      categories
+                      Categories
                     </a>
 
                   </div>
@@ -445,7 +445,7 @@ include("connectdata.php");
                     ?>
                   </span>
                   <span class="inline-block px-2 py-px ml-2 text-xs text-green-500 bg-green-100 rounded-md">
-                    product
+                    Product
                   </span>
                 </div>
                 <div>
@@ -468,10 +468,10 @@ include("connectdata.php");
                 <table class="table" style="width: 100%;">
                   <thead>
                     <tr>
-                      <th>name</th>
-                      <th>image</th>
-                      <th>price</th>
-                      <th>status</th>
+                      <th>Name</th>
+                      <th>Image</th>
+                      <th>Email</th>
+                      <th>Status</th>
                       <th>Cancel</th>
                       <th>Accept</th>
                     </tr>
@@ -482,7 +482,7 @@ include("connectdata.php");
                       <td>Doe</td>
                       <td>john@example.com</td>
                       <td>True</td>
-                      <td><button>cancel</button></td>
+                      <td><button>Cancel</button></td>
                       <td><button>Accept</button></td>
 
                     </tr>
@@ -491,7 +491,7 @@ include("connectdata.php");
                       <td>Moe</td>
                       <td>mary@example.com</td>
                       <td>True</td>
-                      <td><button>cancel</button></td>
+                      <td><button>Cancel</button></td>
                       <td><button>Accept</button></td>
 
                     </tr>
@@ -500,7 +500,7 @@ include("connectdata.php");
                       <td>Dooley</td>
                       <td>july@example.com</td>
                       <td>True</td>
-                      <td><button>cancel</button></td>
+                      <td><button>Cancel</button></td>
                       <td><button>Accept</button></td>
 
 

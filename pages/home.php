@@ -76,7 +76,7 @@
                 <div class="container">
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                            <img class="img-fluid" src="../assets/img/samaung_5-1-r.png" alt=""
+                            <img class="img-fluid" src="../assets/img/sliderimg2.png" alt=""
                                 style=" height: 380px; margin : 50px  0px 80px  100px;  ">
                         </div>
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
@@ -225,7 +225,7 @@
 
                                         <?php $num += 1; ?>
                                         <div class="col-12 col-md-3" >
-                                            <div class="card h-60" style=" box-shadow: rgba(89,171,110,0.25) 0px 13px 27px -5px, rgba(89, 171, 110, 0.3) 0px 8px 16px -8px;">
+                                            <div class="card h-60" style=" box-shadow: rgba(89,171,110,0.25) 0px 13px 27px -5px, rgba(89, 171, 110, 0.3) 0px 8px 16px -8px; height: 450px; ">
                                                 <a href="shop-single.php?id=<?php echo $product['id'] ?>">
                                                     <img src="../admin_pages/uploads/<?php echo $product['main_picture'] ?>"
                                                         class="card-img-top p-4" alt="...">
@@ -237,7 +237,7 @@
                                                         <?php echo $product['product_name']; ?>
                                                     </a>
                                                     <p class="card-text">
-                                                        <?php echo $product['price']; ?>
+                                                        <?php echo $product['price'] . '$'; ?>
                                                     </p>
                                                 </div>
                                             </div>

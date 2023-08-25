@@ -105,8 +105,8 @@ if (isset($_SESSION['userid'])) {
                     $arr = $pdo_read->fetch(PDO::FETCH_ASSOC);
 
                     echo <<<"here"
-        <article class="product">
-        <header>
+        <article class="product" >
+        <header  >
             <a class="remove">
                 <img src="../admin_pages/uploads/$arr[main_picture]" alt="">
 
@@ -115,7 +115,7 @@ if (isset($_SESSION['userid'])) {
         </header>
 
         <div class="cont_content">
-        <div class="content">
+        <div class="content" id="hi">
 
             <h1>$arr[product_name]</h1>
 

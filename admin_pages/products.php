@@ -56,16 +56,16 @@ include("connectdata.php");
                 <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                 <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                 <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  dashboard
+                  Dashboard
                 </a> 
                 <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  users
+                  Users
                 </a>
                 <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                   Products
                 </a>
                 <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                  categories
+                  Categories
                 </a>
 
 
@@ -193,7 +193,7 @@ include("connectdata.php");
                     Home
                   </a>
                   <a href="../pages/shop.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
-                    shop
+                    Shop
                   </a>
                   <a href="../pages/contact.php" role="menuitem" class="block px-4 py-2 text-sm text-gray-700 transition-colors hover:bg-gray-100 dark:text-light dark:hover:bg-primary">
                     Contact
@@ -299,16 +299,16 @@ include("connectdata.php");
                   <!-- active & hover classes 'text-gray-700 dark:text-light' -->
                   <!-- inActive classes 'text-gray-400 dark:text-gray-400' -->
                   <a href="Admin.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    dashboard
+                    Dashboard
                   </a> 
                   <a href="users.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    users
+                    Users
                   </a>
                   <a href="products.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
                     Products
                   </a>
                   <a href="categories.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700">
-                    categories
+                    Categories
                   </a>
 
                 </div>
@@ -322,20 +322,20 @@ include("connectdata.php");
         <main>
           <div class="flex flex-1 h-full p-4  ">
             <div class="container">
-              <h2>Products</h2>
+              <h2 style="margin-bottom: 30px; margin-top:30px" >Products</h2>
               <p><a href="Addproduct.php" role="menuitem" class="block p-2 text-sm text-gray-700 transition-colors duration-200 rounded-md dark:text-light dark:hover:text-light hover:text-gray-700 btn btn-primary ">
-                  Addprodcut
+                  Add products
                 </a></p>
              
               <table class="table" style="width: 100%;">
                 <thead>
                   <tr>
-                    <th>id</th>
-                    <th>name</th>
-                    <th>category</th>
-                    <th>image</th>
-                    <th>price</th>
-                    <th>status</th>
+                    <th>Id</th>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Status</th>
                   </tr>
 
                 </thead>
@@ -368,7 +368,7 @@ include("connectdata.php");
         <td>$value[product_name]</td>
         <td>$value[category_id]</td>
         <td><img src="./uploads/$value[main_picture]" alt="image" srcset="" width=70px height=70px> </td>
-        <td>$value[price]</td>
+        <td>$value[price]$</td>
         <td>$value[status]</td>
        <td><a  class="btn btn-primary " href="update.php?id=$value[id]">Update</a></td>
           <td><a  class="btn btn-primary" href="products.php?id=$value[id]">Delete</a></td>
